@@ -78,8 +78,10 @@ async function startServer() {
 
     app.use(bodyParser.json());
     app.use(cors());
+
     await server.start();
     app.use('/graphql', expressMiddleware(server));
+    
     app.listen(8000, () => {
         console.log(`Server is running on port 8000`);
     });
