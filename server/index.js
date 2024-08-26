@@ -6,7 +6,9 @@ import { expressMiddleware } from '@apollo/server/express4';
 import axios from 'axios';
 
 async function startServer() {
+    // initialise express
     const app = express();
+
     const server = new ApolloServer({
         typeDefs: `
             type User {
