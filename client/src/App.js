@@ -3,6 +3,8 @@ import './App.css';
 import { gql, useQuery } from '@apollo/client';
 
 // The GraphQL query
+
+
 const GET_ALL_TODOS = gql`
   query GetAllTodos {
     getTodos {
